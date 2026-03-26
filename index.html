@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Wadood | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <header>
+        <nav>
+            <div class="logo">AW<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="hero hidden">
+            <div class="hero-text">
+                <p class="greeting">Welcome. I am</p>
+                <h1>Abdul Wadood</h1>
+                <h2>Web Developer & B.Tech Innovator</h2>
+                <p>Navigating the intersection of logic and design. As a 1st-year B.Tech student, I build efficient, user-centric web applications and digital tools that solve real-world problems.</p>
+                <div class="btn-group">
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section hidden">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML5 & CSS3</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Firebase</div>
+                <div class="skill-item">C / C++</div>
+                <div class="skill-item">Responsive Design</div>
+                <div class="skill-item">System Logic</div>
+            </div>
+        </section>
+
+        <section id="projects" class="section hidden">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="project-cards">
+                
+                <div class="card">
+                    <h3>Campus Compass</h3>
+                    <p>A logic-based kiosk map designed to help students navigate complex university layouts and locate faculty seamlessly.</p>
+                    <div class="tags"><span>Mapping</span><span>Logic</span></div>
+                    <a href="https://campuscompass-899ca.web.app/" target="_blank" rel="noopener noreferrer" class="project-link">Campus Compass | Kiosk Map &rarr;</a>
+                </div>
+
+                <div class="card">
+                    <h3>Medi-Locker (Lite)</h3>
+                    <p>A secure, lightweight platform engineered to digitize, organize, and manage critical personal medical records.</p>
+                    <div class="tags"><span>Security</span><span>Data</span></div>
+                    <a href="https://medi-locker-lite.web.app/" target="_blank" rel="noopener noreferrer" class="project-link">Medi-Locker (Lite) &rarr;</a>
+                </div>
+
+                <div class="card">
+                    <h3>Academic Risk Analyzer</h3>
+                    <p>An analytical tool utilizing student data metrics to predict academic outcomes and flag potential risks early.</p>
+                    <div class="tags"><span>Analytics</span><span>Algorithms</span></div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-link">Academic Risk Analyzer &rarr;</a>
+                </div>
+
+                <div class="card">
+                    <h3>BikeConnect</h3>
+                    <p>A modern web application ecosystem designed to connect cycling enthusiasts and facilitate route sharing.</p>
+                    <div class="tags"><span>Community</span><span>Web App</span></div>
+                    <a href="https://bike-connects.web.app/" target="_blank" rel="noopener noreferrer" class="project-link">BikeConnect - Login &rarr;</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section hidden">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="form-container">
+                <p class="form-subtitle">Have a project in mind or just want to say hi? Send me a message below.</p>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="3361c16a-f217-4071-b4e2-3af8b82cc2af">
+                    <input type="checkbox" name="botcheck" class="botcheck" style="display: none;">
+                    
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="How can I help you?" rows="5" required></textarea>
+                    
+                    <button type="submit" class="btn btn-primary form-btn">Send Message</button>
+                </form>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abdul-wadood-b8135537b/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Abdul Wadood | LinkedIn</a>
+                    <a href="https://github.com/Cora-1" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Cora-1 (Abdul Wadood)</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Abdul Wadood. Crafted with purpose.</p>
+    </footer>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyBwSaRH-3ml7chYWPIQCN0jHr9_GbYSLzY",
+            authDomain: "abdulwadoodi.firebaseapp.com",
+            projectId: "abdulwadoodi",
+            storageBucket: "abdulwadoodi.firebasestorage.app",
+            messagingSenderId: "362516373190",
+            appId: "1:362516373190:web:b683b91235a853476e01c7",
+            measurementId: "G-TS6E2VH02N"
+        };
+        const app = initializeApp(firebaseConfig);
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
